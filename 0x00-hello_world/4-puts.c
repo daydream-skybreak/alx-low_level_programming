@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 #include <stdio.h>
 /*
  * this is ths first c program
