@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main -  this is ths first c program
- * 
- * returns 0
+ *
+ * Return - 0
  */
 int main(void)
 {
