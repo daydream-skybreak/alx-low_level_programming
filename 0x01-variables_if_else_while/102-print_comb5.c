@@ -6,14 +6,17 @@
  */
 int main(void)
 {
-	int i = 48, j = 48, k = 48, l = 48;
+	int i = 48;
 	
 	while (i < 58)
 {
+	int j = 48;
 	while (j < 58)
 {
+	int k = 48;
 	while (k < 57)
 {
+	int l = 48;
 	while (l < 58)
 {
 	putchar(i);
