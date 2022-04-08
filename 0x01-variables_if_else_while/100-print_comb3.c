@@ -15,12 +15,12 @@ while (val1 < 58)
 {
 	putchar(val);
 	putchar(val1++);
-	if (val == 56 && val1 == 57)
+	if (val == 58 && val1 == 58)
 		break;
 	putchar(',');
 	putchar(' ');
 }
-if (val == 56 && val1 == 57)
+if (val == 56 && val1 == 58)
 break;
 val++;
 i++;
