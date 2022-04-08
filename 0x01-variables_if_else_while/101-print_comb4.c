@@ -14,7 +14,7 @@ int val1 = 48 + i;
 while (val1 < 58)
 {
 int val2 = 49 + i;
-	while ( val2 < 58)
+	while (val2 < 58)
 {
 	putchar(val);
 	putchar(val1);
@@ -24,7 +24,7 @@ int val2 = 49 + i;
 	putchar(',');
 	putchar(' ');
 }
-val2++;
+val1++;
 }
 if (val == 55 && val1 == 56)
 break;
