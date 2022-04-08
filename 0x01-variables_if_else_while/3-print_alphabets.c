@@ -8,10 +8,10 @@ int main(void)
 {
 int val = 97;
 while (val < 123)
-        putchar(val++);
+	putchar(val++);
 val = 65;
-while (val < 90)
-        putchar(val++);
+while (val <= 90)
+	putchar(val++);
 putchar('\n');
 return (0);
 }
