@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-int val = 97;
-while (val < 123)
+int val = 48;
+while (val < 58)
 {
 	putchar(val++);
 	putchar(',');
