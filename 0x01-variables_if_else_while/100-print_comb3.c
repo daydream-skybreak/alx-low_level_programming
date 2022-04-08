@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-int val = 48, i=1;
+int val = 48, i = 1;
 
 while (i < 10)
 {
-int val1 = 48+i;
-while(val1<58)
+int val1 = 48 + i;
+while (val1 < 58)
 {
 	putchar(val);
 	putchar(val1++);
@@ -23,7 +23,7 @@ while(val1<58)
 if (val == 56 && val1 == 57)
 break;
 val++;
-
+i++;
 }
 putchar('\n');
 return (0);
