@@ -7,7 +7,7 @@
 int main(void)
 {
 int val = 48;
-while (val < 57)
+while (val < 58)
 	putchar(val++);
 val = 97;
 while (val <= 102)
