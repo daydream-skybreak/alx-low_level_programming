@@ -6,39 +6,28 @@
  */
 int main(void)
 {
-int i = 48;
+int num1 = 0, num2 = num1 + 1;
 
-while (i < 58)
+while (num1 <=98)
 {
-int j = 48;
-	
-while (j < 58)
-{
-int k = 48;
-	
-while (k < 57)
-{
-int l = 48;
+	while (num2 <= 99)
+	{
+		putchar((num1 / 10) + '0';
+		putchar((num1 % 10) + '0';
+		putchar(' ');
+		putchar((num2 / 10) + '0';
+		putchar((num2 % 10) + '0';
 
-while (l < 58)
-{
-	putchar(i);
-	putchar(j);
-	putchar(' ');
-	putchar(k);
-	putchar(l);
-	if (i == 57 && j == 57 && k == 56 && l == 57)
-		break;
-	putchar(',');
-	putchar(' ');
-	l++;
-}
-k++;
-}
-j++;
-}
-i++;
+		if (num1 == 98 && num2 == 99)
+		continue;
+
+		putchar(',');
+		putchar(' ');
+		num2++;
+	}
+num1++;
 }
 putchar('\n');
+
 return (0);
 }
