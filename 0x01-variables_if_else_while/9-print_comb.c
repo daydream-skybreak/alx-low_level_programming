@@ -10,6 +10,8 @@ int val = 48;
 while (val < 58)
 {
 	putchar(val++);
+	if (val == 57)
+		break;
 	putchar(',');
 	putchar(' ');
 }
