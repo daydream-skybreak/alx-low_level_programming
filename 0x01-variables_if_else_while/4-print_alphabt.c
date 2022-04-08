@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-int val = 97;
+char val = 'a';
 while (val < 123)
 {
-if (val == 69 || val == 81)
+if (val == 'e' || val == 'q')
 {
 val++;
 continue;
