@@ -10,7 +10,7 @@ int val = 48, i=1;
 
 while (i < 10)
 {
-val1 = 48+i;
+int val1 = 48+i;
 while(val1<58)
 {
 	putchar(val);
