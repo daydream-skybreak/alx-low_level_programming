@@ -8,8 +8,8 @@ int main(void)
 {
 int val = 122;
 
-while (val > 98)
-        putchar(val--);
+while (val > 96)
+	putchar(val--);
 putchar('\n');
 return (0);
 }
