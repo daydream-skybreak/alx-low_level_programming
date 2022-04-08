@@ -14,7 +14,7 @@ int val1 = 48 + i;
 
 while (val1 < 58)
 {
-int val2 = 49 + val1 - val;
+int val2 = val1 + val1 - val;
 	while (val2 < 58)
 {
 	putchar(val);
