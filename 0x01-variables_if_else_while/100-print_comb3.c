@@ -14,7 +14,7 @@ int val1 = 48+i;
 while(val1<58)
 {
 	putchar(val);
-	putchar(val1);
+	putchar(val1++);
 	if (val == 56 && val1 == 57)
 		break;
 	putchar(',');
