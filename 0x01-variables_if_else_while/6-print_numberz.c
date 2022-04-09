@@ -2,7 +2,7 @@
 /**
  * main - prints 0-9 numbers using putchar
  *
- * Return : 0 after successful execution
+ * Return: 0 after successful execution
  */
 int main(void)
 {
