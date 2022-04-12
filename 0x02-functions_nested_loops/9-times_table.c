@@ -14,9 +14,9 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			int b = i * j;
-			_putchar(b, '0');
+			_putchar(b + '0');
 		}
-		_putchar('$');
+		_putchar(35);
 		_putchar('\n');
 	}
 }
