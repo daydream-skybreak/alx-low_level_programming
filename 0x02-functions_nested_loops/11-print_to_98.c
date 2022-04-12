@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - prints to 98 from any number
  * @n: integer input
@@ -12,10 +13,10 @@ void print_to_98(int n)
 	{
 		for (i = n; i <= 98; i++)
 		{
-			_putchar(i + '0');
+			printf("%d", i);
 			if (i != 98)
 			{
-				_putchar(',');
+				printf(",");
 				_putchar(' ');
 			}
 		}
@@ -24,7 +25,7 @@ void print_to_98(int n)
 	{
 		for (i = n; i>=98; i++)
 		{
-			_putchar(i + '0');
+			printf("%d", i);
 			if (i != 98)
 			{
 				_putchar(',');
