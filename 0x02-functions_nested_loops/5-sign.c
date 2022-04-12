@@ -22,4 +22,5 @@ int print_sign(int n)
 		_putchar(43);
 		return (1);
 	}
+	return (0);
 }
