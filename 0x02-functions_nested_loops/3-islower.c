@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - where execution starts
- * @c - an integer parameter
+ * @c: an integer parameter
  *
  * Return: 1 or 0 if successful compilation
  */
