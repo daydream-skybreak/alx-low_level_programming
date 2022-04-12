@@ -20,7 +20,6 @@ void print_to_98(int n)
 			}
 		}
 	}
-	}
 	else
 	{
 		for (i = n; i>=98; i++)
