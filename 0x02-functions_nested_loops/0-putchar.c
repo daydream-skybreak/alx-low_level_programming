@@ -11,7 +11,7 @@ int main(void)
 	char adonay[] = "_putchar";
 
 	int a;
-	for (c = 0; c < 8; c++)
+	for (a = 0; a < 8; a++)
 	{
 		_putchar(adonay[c]);
 	}
