@@ -14,3 +14,4 @@ int main(void)
 		if (num % 3 == 0 || num % 5 == 0)
 			printf("%d \n", num);
 	}
+}
