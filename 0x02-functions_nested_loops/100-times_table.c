@@ -8,7 +8,9 @@
  */
 void times_table(int n)
 {
-	int num, mult, prod;
+	int num;
+
+	int mult, prod;
 
 	if (num <= 15 && num >= 0)
 	{
