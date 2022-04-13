@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	unsigned long long i, fst = 0, snd = 1;
+	long int i, fst = 0, snd = 1;
 
-	long long sum = 0;
+	long int sum = 0;
 
 	for (i = 0; i < 50; i++)
 	{
