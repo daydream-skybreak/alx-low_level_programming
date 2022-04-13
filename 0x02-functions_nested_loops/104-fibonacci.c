@@ -36,7 +36,7 @@ for (count = 93; count < 99; count++)
 	}
 
 	printf("%lu%lu", half1, half2);
-	if ( count != 98)
+	if (count != 98)
 		printf(", ");
 
 	fib1_half1 = fib2_half1;
