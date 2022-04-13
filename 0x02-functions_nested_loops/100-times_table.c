@@ -10,7 +10,7 @@ void times_table(int n)
 {
 	int num, mult, prod;
 
-	if (num <+ 15 && num >= 0)
+	if (num <= 15 && num >= 0)
 	{
 		for (num = 0; num <= n ; num++)
 		{
