@@ -11,7 +11,7 @@ int main(void)
 	
 	int temp, sum = 0;
 
-	for (i = 0; i< 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		sum = fst + snd;
 		fst = snd;
