@@ -12,7 +12,7 @@ void times_table(int n)
 
 	int mult, prod;
 
-	if (num <= 15 && num >= 0)
+	if (n <= 15 && n >= 0)
 	{
 		for (num = 0; num <= n ; num++)
 		{
