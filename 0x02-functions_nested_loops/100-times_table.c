@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * times_table - displays the 9th time table
+ * print_times_table - displays the 9th time table
  * @n: 1st parameter
  *
  * Return: nothing to return
