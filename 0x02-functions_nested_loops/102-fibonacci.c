@@ -9,7 +9,7 @@ int main(void)
 {
 	int i, fst = 0, snd = 1;
 	
-	int temp, sum = 0;
+	int sum = 0;
 
 	for (i = 0; i < 50; i++)
 	{
