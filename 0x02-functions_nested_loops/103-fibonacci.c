@@ -9,6 +9,7 @@ int main(void)
 {
 	long int fst = 0, snd = 1;
 	long int sum = 0, total = 0;
+
 	while (sum < 4000000)
 	{
 		sum = fst + snd;
