@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_lines - prints lines
+ * print_line - prints lines
  * @n: integer input
  *
  * Return: always 0
  */
 
-void print_lines(int n)
+void print_line(int n)
 {
 	int i;
 	
