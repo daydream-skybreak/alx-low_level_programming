@@ -3,7 +3,7 @@
  * print_numbers - prints numbers 0 to 9
  * @void: no arguments required
  *
- * Return: nothing
+ * Return: 0
  */
 void print_numbers(void)
 {
