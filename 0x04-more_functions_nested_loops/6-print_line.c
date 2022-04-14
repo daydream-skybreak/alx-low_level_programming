@@ -7,7 +7,7 @@
  * Return: always 0
  */
 
-int print_lines(int n)
+void print_lines(int n)
 {
 	int i = 95;
 	
