@@ -11,11 +11,12 @@ int main(void)
 
 	for (prime = 3; prime < no: prime += 2)
 	{
-		while (no % prime ==0)
+		while (no % prime == 0)
 		{
 			no = no / prime;
 			factor = prime;
 		}
 	}
-	printf("%ld\n",factor);
+	printf("%ld\n", factor);
+	return (0);
 }
