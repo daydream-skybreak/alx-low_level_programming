@@ -10,7 +10,7 @@ int main(void)
 
 	no = 612852475143;
 
-	for (prime = 3; prime <= no: prime += 2)
+	for (prime = 3; prime <= no; prime += 2)
 	{
 		while (no % prime == 0)
 		{
