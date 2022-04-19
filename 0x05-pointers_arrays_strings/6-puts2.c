@@ -7,12 +7,9 @@
  */
 void puts2(char *str)
 {
-	int i = 0, j = 0;
+	int j = 0;
 
-	while (str[i])
-		i++;
-
-	while (j < i - 1)
+	while (str[j] != '\0')
 	{
 		_putchar(str[j]);
 		j += 2;
