@@ -8,7 +8,7 @@ char *cap_string(char *s)
 {
 	int x, y;
 	int trier;
-	char nots[] = ",;.!?(){}nt\" ";
+	char nots[] = ",;.!?(){}\nt\" ";
 
 	for (x = 0,trier = 0; s[x] != '\0'; x++)
 	{
