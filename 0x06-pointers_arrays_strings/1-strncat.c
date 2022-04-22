@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strncat - concats strings up to a certain number
- * *dest: sedtination string
- * @src:source string
+ * @dest: sedtination string
+ * @src: source string
  * @n: number of characters
  *
  * Return: character
@@ -16,6 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 
 	j = 0;
+
 	while (j < n && src[j] != '\0')
 	{
 		dest[i] = src[j];
