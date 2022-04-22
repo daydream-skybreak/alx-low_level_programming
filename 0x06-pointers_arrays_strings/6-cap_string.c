@@ -30,7 +30,7 @@ char *cap_string(char *s)
 				s[x] -= 32;
 				trier = 0;
 			}
-			else if (s[x] < 123 && s[x] > 96)
+			else if (s[x] < 91 && s[x] > 64)
 			{
 				trier = 0;
 			}
