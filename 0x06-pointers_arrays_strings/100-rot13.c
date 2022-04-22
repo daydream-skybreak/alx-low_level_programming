@@ -18,6 +18,7 @@ char *rot13(char *string)
 		if (string[x] == input[y])
 		{
 			string[x] += output[y];
+			break;
 		}
 	}
 	return (string);
