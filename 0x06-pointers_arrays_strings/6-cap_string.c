@@ -10,7 +10,7 @@ char *cap_string(char *s)
 	int trier;
 	char nots[] = ",;.!?(){}\'\n\'\'\t\'\" ";
 
-	for (x = 0,trier = 0; s[x] != '\0'; x++)
+	for (x = 0, trier = 0; s[x] != '\0'; x++)
 	{
 		if (s[0] > 96 && s[0] < 123)
 		{
