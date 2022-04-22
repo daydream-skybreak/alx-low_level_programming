@@ -20,7 +20,7 @@ char *rot13(char *string)
 			string[x] = output[y];
 			break;
 		}
-	}
+		}
 	}
 	return (string);
 }
