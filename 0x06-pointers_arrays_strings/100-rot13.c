@@ -6,17 +6,18 @@
  */
 char *rot13(char *string)
 {
-	int x;
+	int x, y;
+
+	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghjklmnopuvwxyz";
+	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopuvwxyzabcdefghjklm";
 
 	for (x = 0; string[x] != '\0'; x++)
 	{
-		if ((string[x] < 78 && string[x] > 64) || (string[x] > 96 && string[x] < 110))
+		for (y = 0; input[y] != '\0'; y++)
 		{
-			string[x] += 13;
-		}
-		else if ((string[x] < 91 && string[x] > 77) || (string[x] > 109 && string[x] < 123))
+		if (string[x] == input[y])
 		{
-			string[x] -= 13;
+			string[x] += output[y];
 		}
 	}
 	return (string);
