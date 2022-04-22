@@ -12,9 +12,9 @@ char *leet(char *string)
 	char upper[] = "AEOTL";
 	char num[] = "43071";
 
-	for (a = 0; string[a] != '\0': a++)
+	for (a = 0; string[a] != '\0'; a++)
 	{
-		for (b = 0; lower[b] != '\0' && upper[0] != '\0'; b++)
+		for (b = 0; lower[b] != '\0' && upper[b] != '\0'; b++)
 		{
 			if (lower[b] == string[a] || upper[b] == string[a])
 			{
