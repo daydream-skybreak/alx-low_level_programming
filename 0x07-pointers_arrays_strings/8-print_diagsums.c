@@ -4,6 +4,7 @@
  * print_diagsums - prints the sum of the two diagonals in thematrix
  * @a: pointer to matrix
  * @size: size of matrix
+ * Return: void
  */
 void print_diagsums(int *a, int size)
 {
