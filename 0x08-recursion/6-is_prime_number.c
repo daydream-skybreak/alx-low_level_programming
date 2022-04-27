@@ -8,17 +8,17 @@
  */
 int eval(int num, int iter)
 {
-	if (iter == n - 1)
+	if (iter == num - 1)
 	{
 		return (1);
 	}
-	else if (n % iter == 0)
+	else if (num % iter == 0)
 	{
 		return (0);
 	}
-	if (n % iter != 0)
+	if (num % iter != 0)
 	{
-		return (eval(n, iter + 1));
+		return (eval(num, iter + 1));
 	}
 	return (0);
 }
