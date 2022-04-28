@@ -25,8 +25,8 @@ int pw(char *s, int l)
 	{
 		return (1);
 	}
-	
-	if (*s == *(s + 1))
+
+	if (*s == *(s + l))
 	{
 		return (pw(s + 1, l - 2));
 	}
