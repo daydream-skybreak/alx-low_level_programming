@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * main - main function
  * @argc: number of command lines
@@ -8,7 +8,8 @@
  */
 int main(int argc, char* argv[])
 {
-	(void)argc;
-	printf("%s\n", argv[0]);
+	(void)argv;
+	printf("%d\n", argc);
 	return (1);
 }
+
