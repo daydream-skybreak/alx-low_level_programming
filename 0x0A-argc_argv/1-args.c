@@ -6,10 +6,10 @@
  * @argv: array of string of command lines
  * Return: 1
  */
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
 	(void)argv;
 	printf("%d\n", argc);
-	return (1);
+	return (0);
 }
 
