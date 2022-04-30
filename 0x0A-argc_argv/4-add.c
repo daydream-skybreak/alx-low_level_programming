@@ -1,3 +1,4 @@
+#include <ctype.h>
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -17,9 +18,9 @@ int main(int argc, char const *argv[])
 		return (0);
 	}
 
-	for (i = 1; i < argc; i++)
+	for (i = 0; i < argc - 1; i++)
 	{
-		if (!(isdigit(argv[i])))
+		if (!(isdigit(argv[i + 1])))
 		{
 			checker++;
 		}
@@ -35,11 +36,11 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		for (i = 1; i < argc; i++)
+		for (i = 0; i < argc- 1; i++)
 		{
-			sum += argv[i];
+			sum += atoi(argv[i + 1]);
 		}
+		printf("%d\n", sum);
 	}
 return (0);
 }
-
