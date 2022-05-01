@@ -3,8 +3,8 @@
 #include "main.h"
 /**
  * main - returns smallest number of coins to a given number
- * @argv: integer value passed into the function
- * @argc: tells how many args are passed into the main function
+ * @argc: integer value passed into the function
+ * @argv: tells how many args are passed into the main function
  * Return: integer
  */
 int main(int argc, char const *argv[])
@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
 
 	if (atoi(argv[1]) < 0)
 	{
-		printf("%d\n", 0);
+		printf("%d\n", m);
 		return (0);
 	}
 
@@ -38,6 +38,7 @@ int main(int argc, char const *argv[])
 				coin -= arr[j];
 
 				m++;
+
 				if (coin == 0)
 				{
 					break;
@@ -45,6 +46,7 @@ int main(int argc, char const *argv[])
 				if (arr[j] <= coin)
 				{
 					j--;
+
 					continue;
 				}
 			}
@@ -53,10 +55,12 @@ int main(int argc, char const *argv[])
 		{
 			n = m;
 		}
+
 		if (n > m)
 		{
 			n = m;
 		}
+
 		if (coin == 0)
 		{
 			break;
