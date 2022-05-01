@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
 	int i, j, coin, m, n;
 
 	int arr[] = {25, 10, 5, 2, 1};
-	
+
 	m = 0;
 
 	if (argc != 2)
@@ -20,6 +20,7 @@ int main(int argc, char const *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 	if (atoi(argv[1]) < 0)
 	{
 		printf("%d\n", 0);
@@ -32,9 +33,10 @@ int main(int argc, char const *argv[])
 
 		for (j = i; j < 5 - i; j++)
 		{
-			if ( coin >= arr[j])
+			if (coin >= arr[j])
 			{
 				coin -= arr[j];
+
 				m++;
 				if (coin == 0)
 				{
