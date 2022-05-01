@@ -38,7 +38,9 @@ int main(int argc, char const *argv[])
 	{
 		for (i = 0; i < argc- 1; i++)
 		{
-			sum += atoi(argv[i + 1]);
+			if (i == 0)
+				continue;
+			sum += atoi(argv[i]);
 		}
 		printf("%d\n", sum);
 	}
