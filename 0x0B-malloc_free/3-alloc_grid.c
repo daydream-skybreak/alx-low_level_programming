@@ -10,7 +10,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **arr;
+	int *arr;
 	int i, j;
 	arr = NULL;
 
@@ -25,7 +25,7 @@ int **alloc_grid(int width, int height)
 		{
 			printf("\n");
 		}
-		(arr + j) = 0;
+		arr[j] = 0;
 	}
 
 	return (arr);
