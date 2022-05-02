@@ -26,9 +26,3 @@ for (i = 0; i < size; i++)
 
 return (s);
 }
-int main()
-{
-	create_array(5, 'f');
-	return (0);
-}
-
