@@ -35,4 +35,4 @@ char *_strdup(char *str)
 	cp[i] = '\0';
 
 	return (cp);
-
+}
