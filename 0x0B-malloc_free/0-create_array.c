@@ -16,7 +16,7 @@ if (size == 0)
 	return (NULL);
 }
 char *s;
-*s = (char*)malloc(size * sizeof(char));
+s = (char*)malloc(size * sizeof(char));
 
 for (i = 0; i < size; i++)
 {
