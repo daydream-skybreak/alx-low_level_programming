@@ -4,7 +4,7 @@
 /**
  * str_concat - concats strings and returns a new freeable memory
  * @s1: leading string
- * @s2; following string
+ * @s2: following string
  * Return: new string
  */
 
@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; s2[j] != '\0'; j++)
 		;
 
-	newStr = (char*)malloc((i + j) * sizeof(char));
+	newStr = (char *)malloc((i + j + 1) * sizeof(char));
 
 	if (newStr == NULL)
 		return (NULL);
