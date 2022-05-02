@@ -5,7 +5,6 @@
  * alloc_grid - returns two dimentional array of integer
  * @width: outer array size
  * @height: inner array size
- * 
  * Return: the 2d array created
  */
 int **alloc_grid(int width, int height)
