@@ -17,7 +17,7 @@ if (size == 0)
 	return (NULL);
 }
 
-s = (char*)malloc(size * sizeof(char));
+s = (char *)malloc(size * sizeof(char));
 
 for (i = 0; i < size; i++)
 {
@@ -26,3 +26,9 @@ for (i = 0; i < size; i++)
 
 return (s);
 }
+int main()
+{
+	create_array(5, 'f');
+	return (0);
+}
+
