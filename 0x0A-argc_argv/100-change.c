@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 /**
@@ -46,7 +46,6 @@ int main(int argc, char const *argv[])
 				if (arr[j] <= coin)
 				{
 					j--;
-
 					continue;
 				}
 			}
