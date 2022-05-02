@@ -12,7 +12,8 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 	{
 		return ("failed to allocate memory\n");
-	char *str = (int*)malloc(sizeof(char) * size);
+	char *str;
+	str = malloc(sizeof(char) * size);
 
 	long unsigned int i;
 	i = 0;
@@ -22,5 +23,5 @@ char *create_array(unsigned int size, char c)
 		str[i] = c;
 		i++;
 	}
-	return (str) || ("NULL");
+	return (str);
 }
