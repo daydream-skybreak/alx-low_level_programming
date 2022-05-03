@@ -11,7 +11,7 @@
  * Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
 	int i, j, length, sum;
 	char *ptr;

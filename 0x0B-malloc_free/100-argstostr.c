@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 	}
 	size += 1;
 
-	ptr = malloc(sizeof(char) * size);
+	ptr = (char *)malloc(sizeof(char) * size);
 	if (ptr == NULL)
 	{
 		free(ptr);
