@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - allocates memory with normal process termination upon faliure
+ * *malloc_checked - allocates memory with normal process termination upon faliure
  * @b: size to be allocated
  *
  * Return: NULL
@@ -16,5 +16,6 @@ void *malloc_checked(unsigned int b)
 	{
 		exit(98);
 	}
+
 	return (temp);
 }
