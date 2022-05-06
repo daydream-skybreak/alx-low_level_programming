@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * *malloc_checked - allocates memory with normal process termination upon faliure
+ * *malloc_checked - allocates memory with normal process when process fails
  * @b: size to be allocated
  *
  * Return: NULL
