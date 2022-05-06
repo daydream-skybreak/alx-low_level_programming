@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * string_nconcat - concatinates string 1 to string 2 up until nth value
+ * *string_nconcat - concatinates string 1 to string 2 up until nth value
  * @s1: parent string
  * @s2: child string
  * @n: number of concatinated characters
@@ -9,35 +9,42 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j;
-	char *new;
-	new = malloc((n + sizeof *s1) * sizeof *new);
+	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
-	if (new == NULL)
-	{
-		return (NULL);
-	}
+	if (s1 == NULL)
+		s1 = "";
 
-	for (i = 0; s1[i] != '\0'; i++)
+	if (s2 == NULL)
+		s2 = "";
+
+	while (s1[size1] != '\0')
 	{
-		new[i] = s[i];
-	}
-	if (n >= sizeof(s2))
-	{
-		for (j = 0; j < sizeof(s2)- 1; j++)
-		{
-			new[i] = s2[j];
-			i++;
-		}
-		new[i] = '\0';
-		return (new);
-	}
-	for (j = 0; j < n; j++)
-	{
-		new[i] = s2[j];
-		i++;
+		size1++;
 	}
 
-	s1[i] = '\0';
-	return (new);
+	while (s2[size2] != '\0')
+	{
+		size2++;
+	}
+
+	if (n > size2)
+	n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
+
+	if (p == NULL)
+		return (0);
+
+	for (i = 0; i < size1; i++)
+	{
+		p[i] = s1[i];
+	}
+
+	for (; i < (size1 + n); i++)
+	{
+		p[i] = s2[i - size1];
+	}
+	p[i] = '\0';
+
+	return (p);
 }
