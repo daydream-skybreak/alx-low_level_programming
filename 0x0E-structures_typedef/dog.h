@@ -4,5 +4,5 @@ struct dog {
 	char *name;
 	char *owner;
 	int age;
-}
+};
 #endif /* _dog_h_ */
