@@ -1,4 +1,6 @@
 #include "dog.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * print_dog - prints dog attribute
  * @d: structure
@@ -7,7 +9,7 @@ void print_dog(struct dog *d)
 {
 	char *str = d->name != NULL? d->name: "(nil)";
 	char *str1 = d->owner != NULL? d->owner: "(nil)";
-	int age1 = d->age != NULL? d->age: -1;
+	int age1 = d->age? d->age: -1;
 	
 	printf("Name: %s\n", str);
 	if (age1 == -1)
@@ -16,7 +18,16 @@ void print_dog(struct dog *d)
 	}
 	else
 	{
-		printf("Age: %d\n", &age1);
+		printf("Age: %d\n", age1);
 	}
-	printf("Owner: %s", str1);
+	printf("Owner: %s\n", str1);
+}
+int main()
+{
+	dog_t doog;
+	doog.name = "Poopy";
+	doog.age = 12;
+	doog.owner = "me i own the dog";
+	print_dog(&doog);
+	return (0);
 }

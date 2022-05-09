@@ -23,4 +23,4 @@ dog_t *new_dog(char *name, float age, char *owner);
 
 void free_dog(dog_t *d);
 
-#endif /* _dog_h_ */
+#endif/* _dog_h_ */
