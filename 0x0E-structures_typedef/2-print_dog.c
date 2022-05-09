@@ -22,12 +22,3 @@ void print_dog(struct dog *d)
 	}
 	printf("Owner: %s\n", str1);
 }
-int main()
-{
-	dog_t doog;
-	doog.name = "Poopy";
-	doog.age = 12;
-	doog.owner = "me i own the dog";
-	print_dog(&doog);
-	return (0);
-}
