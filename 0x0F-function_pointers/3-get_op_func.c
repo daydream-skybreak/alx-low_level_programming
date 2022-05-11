@@ -33,6 +33,8 @@ op_t ops[] = {
 		}
 	     i++;
 	}
+	printf("Error\n");
+	exit(99);
 
 	return (0);
 }
