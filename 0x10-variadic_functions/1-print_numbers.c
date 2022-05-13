@@ -9,7 +9,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (n == 0)
 	{
-		return (NULL);
+		exit (98);
 	}
 
 	va_start(list, n);
@@ -22,4 +22,4 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		}
 	}
-}	
+}
