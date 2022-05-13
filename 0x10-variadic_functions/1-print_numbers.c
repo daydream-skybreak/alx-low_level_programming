@@ -1,16 +1,14 @@
 #include "variadic_functions.h"
 /**
- *
+ * print_numbers - prints numbers separated by separator
+ * @separator: used to separate the numbers
+ * @n: number of arguments
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list list;
 	unsigned int i;
-
-	if (n == 0)
-	{
-		return;
-	}
 
 	va_start(list, n);
 
