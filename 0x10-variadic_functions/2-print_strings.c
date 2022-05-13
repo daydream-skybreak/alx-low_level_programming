@@ -17,7 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		new = va_arg(list, char *);
 
-		if (str)
+		if (new)
 		{
 			printf("%s", new);
 		}
