@@ -1,5 +1,8 @@
-#ifndef _VARIADIC_FUNCTIONS_H_
-#define _VARIADIC_FUNCTIONS_H_
+#ifndef _VARIADIC_FUNCTIONS_
+#define _VARIADIC_FUNCTIONS_
+#include <stdio.h>
+#include <stdlib.h>
+
 int _putchat(char s);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
