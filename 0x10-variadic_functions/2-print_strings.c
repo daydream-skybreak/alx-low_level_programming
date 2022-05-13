@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <string.h>
 /**
  *
  */
@@ -13,7 +12,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		strcpy(new, va_arg(list, char));
+		new = va_arg(list, char *);
 		
 		if (new == NULL)
 		{
