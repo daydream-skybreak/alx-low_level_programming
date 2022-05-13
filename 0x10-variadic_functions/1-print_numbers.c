@@ -9,11 +9,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (n == 0)
 	{
-		exit (98);
+		return;
 	}
 
 	va_start(list, n);
-	
+
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(list, int));
