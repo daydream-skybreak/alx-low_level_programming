@@ -9,7 +9,7 @@
 
 size_t print_list(const list_t *h)
 {
-	unsigned int num_node;
+	long unsigned num_node;
 
 	while (h)
 	{
