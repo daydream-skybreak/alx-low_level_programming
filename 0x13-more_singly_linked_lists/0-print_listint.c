@@ -6,18 +6,13 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	int cnt = 0;
+	size_t cnt = 0;
 
-	if (h == NULL)
-	{
-		return (NULL);
-	}
 	while (h)
 	{
 		printf("%d\n",h->n);
 		cnt++;
-		if (h->next == NULL)
-			return (cnt);
 		h = h->next;
 	}
+	return (cnt);
 }
