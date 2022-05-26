@@ -1,5 +1,4 @@
 #include "main.h"
-#include "holberton.h"
 /**
  * flip_bits - count the bit to change to another value
  * @n: the number
