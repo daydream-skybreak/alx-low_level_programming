@@ -1,6 +1,10 @@
 #include "hash_tables.h"
 /**
- *
+ * hash_table_set - adds an elements to the hash table
+ * @ht: hash table
+ * @key: the key on the hash table
+ * @value: The value associated with the key
+ * Return: 1 if successful and 0 if not
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -8,7 +12,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *vlu_cpy;
 	unsigned long int idx, i;
 
-	if(ht == NULL || key == NULL || *key == '\0' || value == NULL)
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
 
 	vlu_cpy = strdup(value);
@@ -16,9 +20,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	idx = key_index((const unsigned char *)key, ht->size);
-	for(i = idx; ht->array[i]; i++)
+	for (i = idx; ht->array[i]; i++)
 	{
-		if(strcmp(ht->array[i]->key, key) == 0)
+		if (strcmp(ht->array[i]->key, key) == 0)
 		{
 			free(ht->array[i]->value);
 			ht->array[i]->value = vlu_cpy;
