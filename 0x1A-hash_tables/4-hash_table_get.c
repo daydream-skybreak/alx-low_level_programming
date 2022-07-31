@@ -1,6 +1,9 @@
 #include "hash_tables.h"
 /**
- *
+ * hash_table_get - gets a value with a specific key in the hash table
+ * @ht: hash table
+ * @key: key of that value
+ * Return: the value of the key or NULL
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -8,12 +11,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int idx;
 
 	if (ht == NULL || key == NULL || *key == '\0')
-		return NULL;
+		return (NULL);
 
 	idx = key_index((const unsigned char *)key, ht->size);
 
 	if (idx >= ht->size)
-		return NULL;
+		return (NULL);
 
 	node = ht->array[idx];
 
