@@ -10,7 +10,7 @@ void print(int *array, size_t l, size_t r)
 {
 	for (; l < r + 1; l++)
 	{
-		if (l == r )
+		if (l == r)
 			printf("%d\n", array[l]);
 		else
 			printf("%d, ", array[l]);
