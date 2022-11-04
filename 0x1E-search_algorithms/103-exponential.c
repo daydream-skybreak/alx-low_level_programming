@@ -60,6 +60,9 @@ int exponential_search(int *array, size_t size, int value)
 	size_t left, right, new_size;
 	int *pos, idx;
 
+	if (array == NULL)
+		return (-1);
+
 	left = 0, right = 1;
 
 	while (array[right] < value)
